@@ -17,7 +17,7 @@ public class GoogleRTest {
 		driver.manage().window().maximize();
 	}
 
-/*	@Test
+		@Test
 	public void testgoogle() throws InterruptedException {
 		driver.get("https://google.com.ua");
 		driver.findElement(By.name("q")).sendKeys("GeeksForLess");
@@ -26,9 +26,9 @@ public class GoogleRTest {
 		driver.findElement(By.linkText("GeeksForLess is a North American outsourcing IT company.")).click();
 		Thread.sleep(8000);
 	}
-*/
+	 
 	@Test
-	public void testgoogl1e() throws InterruptedException {
+	public void copy_text() throws InterruptedException {
 		driver.get("https://google.com.ua");
 		driver.findElement(By.name("q")).sendKeys("GeeksForLess");
 		driver.findElement(By.name("btnG")).click();
@@ -46,13 +46,14 @@ public class GoogleRTest {
 		String arr[] ={a, b, c, d, e, f, g, h, i, j};
 		for (String v:arr){
 			System.out.println(v);
+			
 		}
 
 	}
-	
+
 	@After
 	public void tearDown(){
-		
+
 		driver.quit();
 	}
 
